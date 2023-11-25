@@ -4,37 +4,22 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="continer-fluid border p-2 m-2">
-        <h1 class="text-center">Internship Form</h1>
-        <div class="row">
-            <div class="col-3 m-1">First Name</div>
-            <div class="col-3 m-1">Last Name</div>
-            <div class="col-3 m-1">Email Address</div>
-        </div>
-        <div class="row">
-            <input class="col-3 m-1" type="text" name="" id="first-name-input">
-            <input class="col-3 m-1" type="text" name="" id="second-name-input">
-            <input class="col-3 m-1" type="email" name="" id="email-input">
-        </div>
-        <div class="row">
-            <div class="col-4 m-1">College</div>
-            <div class="col-3 m-1">Graduation Year</div>
-            <div class="col-2 m-1">Roll No</div>
-        </div>
-        <div class="row">
-            <input class="col-4 m-1" type="text" name="" id="college-input">
-            <input class="col-3 m-1" type="number" name="" id="roll-no-input">
-            <input class="col-2 m-1" type="number" name="" id="">
-        </div>
-        <div class="row">
-            <input class="col" type="checkbox" name="" id="conditions-checkbox"><div class="col-2">Agree to terms and condition</div>
-        </div>
-    </div>
+	<form>
+		<cite><h1>Intenship Form</h1></cite>
+		<section class='col-sm-4'><label>First Name</label><input type="text" id="first-name-input" required></input></section>
+		<section class='col-sm-4'><label>Last Name</label><input type="text" id="last-name-input" required></input></section>
+		<section class='col-sm-4'><label>Email Address</label><input type="email" id="email-input" required></input></section>
+		<section class='col-sm-6'><label>College</label><input type="text" id="college-input" required></input></section>
+		<section class='col-sm-3'><label>Graduation Year</label><select><option>2020</option><option>2021</option><option>2022</option><option>2023</option></select></section>
+		<section class='col-sm-3'><label>Roll No.</label><input type="number" id="roll-no-input" required></input></section>
+		<section class='col-sm-12'><input type="checkbox" id="conditions-checkbox">Agree to terms and coditions</input></section>
+		<button type="submit" class="btn-primary">Submit form</button>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
