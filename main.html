@@ -9,17 +9,56 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
-		<cite><h1>Intenship Form</h1></cite>
-		<section class='col-sm-4'><label for="first-name-input" class='form-input invalid'>First Name</label><input class="form-control " type="text" id="first-name-input" required></input></section>
-		<section class='col-sm-4'><label for="last-name-input">Last Name</label><input class="form-control" type="text" id="last-name-input" required></input></section>
-		<section class='col-sm-4'><label for="email-input">Email Address</label><input class="form-control" type="email" id="email-input" required></input></section>
-		<section class='col-sm-6'><label for="college-input">College</label><input class="form-control" type="text" id="college-input" required></input></section>
-		<section class='col-sm-3'><label for="grad-year-select" class='form-label'>Graduation Year</label><select class="form-select" id="grad-year-select" required><option value="" disabled selected>Choose...</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option></select></section>
-		<section class='col-sm-3'><label for="roll-no-input" class='form-label'>Roll No.</label><input class="form-control" type="text" id="roll-no-input" required></input></section>
-		<section class='col-sm-12'><input type="checkbox" for="contitions-checkbox" class="form-control" for='conditions-checkbox' id="conditions-checkbox">Agree to terms and conditions</input><label for="contitions-checkbox">Agree to terms and coditions</label></section>
-		<button type="submit" class="btn-primary">Submit form</button>
-	</form>
+		<div class='container-fluid'>
+			<form method="put">
+						<h1>Internship Form</h1>
+				<section class='row'>
+					<section class='col-sm-4'>
+					<label for='first-name-input'>First Name</label>
+					<input type='text' id='first-name-input' required>
+				</section>
+				<section class='col-sm-4'>
+					<label for='last-name-input'>Last Name</label>
+					<input type='text' id='last-name-input' required>
+				</section>
+				<section class='col-sm-4'>
+					<label for='email-input'>Email Address</label>
+					<input type='email' id='email-input' required>
+				</section>
+
+				</section>
+				<section class='row'>
+					<section class='col-sm-6'>
+					<label for='college-input'>College</label>
+					<input type='text' id='college-input' required>
+				</section>
+				<section class='col-sm-3'>
+					<label for=''>Graduation Year</label>
+					<select >
+						<optgroup label='Choose..'>
+							<option>2020</option>
+						<option>2021</option>
+						<option>2022</option>
+						<option>2023</option>
+						</optgroup>
+					</select>
+				</section>
+				<section class='col-sm-3'>
+					<label for='roll-no-input'></label>
+					<input type='text' id='roll-no-input' required>
+				</section>
+				</section>
+				<section class='row'>
+					<section class='col-sm-12'>
+					<label for='conditions-checkbox'>Agree to terms and conditions</label>
+					<input type='checkbox' id='conditions-checkbox' required>
+				</section>
+				</section>
+								
+				
+				<button type="submit" class='btn btn-primary'>Submit</button>
+			</form>
+		</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
